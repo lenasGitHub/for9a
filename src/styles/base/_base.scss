@@ -1,0 +1,244 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+    @include respond(tab-land) {
+        // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) {
+        // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+::-moz-selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+::-webkit-input-placeholder {
+    color: $color-grey-dark;
+    font-weight: 300
+}
+
+:-moz-placeholder {
+    color: $color-grey-dark;
+    opacity: 1;
+    font-weight: 300
+}
+
+::-moz-placeholder {
+    color: $color-grey-dark;
+    opacity: 1;
+    font-weight: 300
+}
+
+:-ms-input-placeholder {
+    color: $color-grey-dark;
+    font-weight: 300
+}
+
+::-ms-input-placeholder {
+    color: $color-grey-dark;
+    font-weight: 300
+}
+
+
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+select {
+    display: block
+}
+
+figure {
+    margin: 0
+}
+
+a {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+
+iframe {
+    border: 0
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: 0
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+input[type=submit],
+button {
+    -webkit-appearance: none;
+    outline: 0;
+
+}
+
+button:focus,
+select:focus {
+    outline: 0;
+}
+
+
+input {
+    border-radius: 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: 0
+}
+
+.card-panel {
+    margin: 0;
+    padding: 6rem
+}
+
+.btn i,
+.btn-large i,
+.btn-floating i,
+.btn-large i,
+.btn-flat i {
+    font-size: 1em;
+    line-height: inherit
+}
+
+.gray-bg {
+    background: #f9f9ff
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    color: $color-dark-text;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: $color-dark-text
+}
+
+h1,
+.h1 {
+    font-size: 3.6rem
+}
+
+h2,
+.h2 {
+    font-size: 3rem
+}
+
+h3,
+.h3 {
+    font-size: 2.4rem
+}
+
+h4,
+.h4 {
+    font-size: 1.8rem
+}
+
+h5,
+.h5 {
+    font-size: 1.6rem
+}
+
+h6,
+.h6 {
+    font-size: 1.4rem;
+    color: $color-dark-text
+}
+
+td,
+th {
+    border-radius: 0px
+}
+
+.clear::before,
+.clear::after {
+    content: " ";
+    display: table
+}
+
+.clear::after {
+    clear: both
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.section-gap {
+    padding: 120px 0
+}
