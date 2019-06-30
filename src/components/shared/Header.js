@@ -20,10 +20,6 @@ class Header extends Component {
     const el = document.querySelector("nav");
     this.setState({ top: el.offsetTop, height: el.offsetHeight });
     window.addEventListener("scroll", this.handleScroll);
-
-    fetch("https://api.for9a.com/opportunity/filter")
-      .then(res => res.json())
-      .then(data => console.log(data.result.items));
   }
 
   componentDidUpdate() {
@@ -137,6 +133,9 @@ class Header extends Component {
             </div>
           </div>
         </div>
+
+
+
       </header>
     );
   }

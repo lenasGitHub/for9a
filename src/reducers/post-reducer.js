@@ -1,5 +1,6 @@
 import {
   FETCH_RENTAL_BY_ID_SCCESS,
+  FETCH_RENTAL_BY_ID,
   FETCH_RENTAL_BY_ID_INIT,
   FETCH_RENTAL_SCCESS
 } from "../actions/types";
@@ -23,7 +24,7 @@ export const postReducer = (state = INITIAL_STATE.items, action) => {
 
 export const selectedItemReducer = (state = INITIAL_STATE.item, action) => {
   switch (action.type) {
-    case FETCH_RENTAL_BY_ID_SCCESS:
+    case FETCH_RENTAL_BY_ID:
       return { ...state, data: action.item };
     case FETCH_RENTAL_BY_ID_INIT:
       return { ...state, data: {} };

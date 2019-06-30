@@ -3,7 +3,8 @@ import axios from "axios";
 import {
   FETCH_RENTAL_BY_ID_SCCESS,
   FETCH_RENTAL_BY_ID_INIT,
-  FETCH_RENTAL_SCCESS
+  FETCH_RENTAL_SCCESS,
+  FETCH_RENTAL_BY_ID
 } from "./types";
 
 const axiosInstance = axiosService.getInstance();
@@ -15,7 +16,7 @@ const fetchPostByIdInit = () => {
 };
 const fetchRentalByIdSccess = item => {
   return {
-    type: FETCH_RENTAL_BY_ID_SCCESS,
+    type: FETCH_RENTAL_BY_ID,
     item
   };
 };
@@ -37,11 +38,13 @@ export const fetchPosts = () => {
 };
 
 export const fetchPostById = postId => {
-  return function(dispatch) {
-    dispatch(fetchPostByIdInit());
-
-    axios.get(`/${postId}`).then(item => {
-      dispatch(fetchRentalByIdSccess(item.data));
-    });
+  return dispatch => {
+    axiosInstance
+      .get("/filter")
+      .then(res => res.data.result.items.find(i => i.id == postId))
+      .then(item => {
+        console.log(item);
+        dispatch(fetchRentalByIdSccess(item));
+      });
   };
 };
