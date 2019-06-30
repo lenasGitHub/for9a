@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import HeaderTop from "./HeaderTop";
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -35,54 +37,7 @@ class Header extends Component {
             this.state.scroll > this.state.top ? "site-header--scrolled" : ""
           }
         >
-          <div class="site-header__top">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-sm-6 col-8 site-header__top--left no-padding">
-                  <ul className="site-header__top--social-media ">
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-facebook" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-youtube" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-linkedin" />
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="nice-select">
-                    <span class="current">English</span>
-                    <ul class="list">
-                      <li data-value="French" class="option">
-                        French
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 col-4 site-header__top--right no-padding">
-                  <a href="#">
-                    <span class="lnr lnr-phone-handset" />{" "}
-                    <span class="text">Register /</span>
-                  </a>
-                  <a href="#">
-                    <span class="lnr lnr-envelope" />{" "}
-                    <span class="text">Login</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <HeaderTop />
           <div class="container main-menu site-header__inner">
             <div class="row align-items-center justify-content-between d-flex">
               <div className="site-header__logo">
@@ -133,9 +88,6 @@ class Header extends Component {
             </div>
           </div>
         </div>
-
-
-
       </header>
     );
   }

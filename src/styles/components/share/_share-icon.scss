@@ -1,0 +1,76 @@
+$h-root: 180; // try changing this :) [0-360]
+$c-primary: #777;
+$c-primary-text: #EEE;
+$c-secondary: #eb751d;
+$c-secondary-text: #222;
+
+.share-animation {
+    display: inline-block;
+    cursor: default;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    order: 1;
+    height: 3.2rem;
+
+    &:hover .share-animation__label {
+        opacity: 0;
+        transition: opacity .5s .125s ease-out;
+    }
+
+    &:hover .share-animation__icon {
+        border-radius: 1em;
+        margin: 0 0;
+    }
+}
+
+.share-animation__icon,
+.share-animation__label {
+    background-color: $color-grey-dark;
+    line-height: 3.2rem;
+    color: $color-white;
+}
+
+.share-animation__label {
+    border-radius: 1.4rem;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: .0816em;
+    top: 0;
+    right: -3rem;
+    left: 0;
+    opacity: 1;
+    pointer-events: none;
+    text-transform: uppercase;
+    transition: opacity .5s .75s ease-out;
+}
+
+.share-animation__icon {
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.7em;
+    margin: 0 -.5em;
+    transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+    width: 1.7em;
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+
+    &:first-child {
+        border-bottom-left-radius: 1em;
+        border-top-left-radius: 1em;
+        margin-left: 0;
+    }
+
+    &:last-child {
+        border-bottom-right-radius: 1em;
+        border-top-right-radius: 1em;
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: $c-secondary;
+        color: $c-secondary-text;
+    }
+}

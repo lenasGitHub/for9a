@@ -105,6 +105,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="password"],
+input[type="date"],
 textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -241,4 +242,25 @@ th {
 
 .section-gap {
     padding: 120px 0
+}
+
+.relative {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.container.no-padding {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.no-padding {
+    padding: 0
 }

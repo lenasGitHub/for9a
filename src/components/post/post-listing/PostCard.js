@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
 import ProcessImage from "react-imgpro";
 import LinesEllipsis from "react-lines-ellipsis";
+
+import ShareIcon from "../../shared/common/ShareIcon";
+import FavoriteIcon from "../../shared/common/FavoriteIcon";
 
 class PostCard extends Component {
   state = { src: "", err: null, selectedItem: {} };
@@ -43,7 +47,6 @@ class PostCard extends Component {
   };
 
   render() {
-    // const { handleClick } = this.props;
     const item = this.props.item;
     return (
       <div class="single-item col-lg-4 col-md-6 u-margin-bottom-medium">
@@ -59,23 +62,12 @@ class PostCard extends Component {
             />
           </div>
           <a
-            href="#!"
+            href={item.category.url}
             class="item-badge bg-default-lightblue cairo-arabic-font"
           >
             {item.category.title}
           </a>
-          <div class="item-label ul-li-right clearfix">
-            <div class="relative">
-              <span onclick="void(0);" class="item-label__tooltip tool-tip">
-                <span class="lnr lnr-heart" />
-                <span class="tool-tip__info">
-                  <span class="tool-tip__text">
-                    <b> أضف الى المفضلة</b>
-                  </span>
-                </span>
-              </span>
-            </div>
-          </div>
+          <FavoriteIcon />
           <div class="meta d-flex justify-content-between">
             <div class="single-item__brand brand">
               <a class="brand__link cairo-arabic-font" href="#!">
@@ -104,21 +96,7 @@ class PostCard extends Component {
           <p className="item-date cairo-arabic-font">
             آخر موعد للتقديم: <span>{this.handleClick(item.deadline)}</span>
           </p>
-          <div class="share">
-            <div class="icon first">
-              <i class="fa fa-facebook" />
-            </div>
-            <div class="icon">
-              <i class="fa fa-twitter" />
-            </div>
-            <div class="icon last">
-              <i class="fa fa-whatsapp" />
-            </div>
-            <div class="label">
-              <i class="fa fa-share-square" />
-              Share
-            </div>
-          </div>
+          <ShareIcon />
         </div>
       </div>
     );

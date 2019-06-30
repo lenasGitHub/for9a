@@ -1,14 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-import * as redux from "redux";
 
-import * as actions from "./actions";
-
-import Header from "./components/shared/Header";
+import Header from "./components/shared/layout/header";
+import { Footer } from "./components/shared/layout/footer";
 
 import { OpportunityList } from "./pages/OpportunityList";
-import { Footer } from "./components/shared/Footer";
 import "./App.css";
 
 import PostDetials from "./components/post/post-detials/PostDetials";
