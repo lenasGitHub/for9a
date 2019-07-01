@@ -40,10 +40,12 @@ export const fetchPosts = () => {
 export const fetchPostById = postId => {
   return dispatch => {
     axiosInstance
-      .get("/filter")
-      .then(res => res.data.result.items.find(i => i.id == postId))
+      .get(`/filter?id=${postId}&full=1`)
+      .then(res => {
+        console.log(res.data.result.items);
+        return res.data.result.items.find(i => i.id == postId);
+      })
       .then(item => {
-        console.log(item);
         dispatch(fetchRentalByIdSccess(item));
       });
   };

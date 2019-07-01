@@ -9,6 +9,7 @@ import { OpportunityList } from "./pages/OpportunityList";
 import "./App.css";
 
 import PostDetials from "./components/post/post-detials/PostDetials";
+
 const store = require("./reducers").init();
 class App extends Component {
   // renderItems() {

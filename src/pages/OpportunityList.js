@@ -4,6 +4,7 @@ import { Search } from "../components/shared/Search";
 import { Banner } from "../components/shared/Banner";
 
 import PostListing from "../components/post/post-listing/PostListing";
+import Images from "../services/infinite-scroll";
 
 export function OpportunityList(props) {
   return (
@@ -15,6 +16,8 @@ export function OpportunityList(props) {
           <div class="row">
             <PostListing />
           </div>
+
+          <Images />
         </div>
       </section>
     </div>

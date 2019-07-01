@@ -5,6 +5,9 @@ import * as actions from "../../../actions";
 import ProcessImage from "react-imgpro";
 import CarouselSlider from "react-carousel-slider";
 import { PostDetialsInfo } from "./PostDetialsInfo";
+
+import ReactHtmlParser from "react-html-parser";
+
 class PostDetials extends Component {
   state = { src: "", err: null, selectedItem: {} };
   handleClick = item => {
@@ -81,6 +84,7 @@ class PostDetials extends Component {
       }
     };
     const item = this.props.item;
+
     let data = [
       {
         des: "1",
@@ -248,22 +252,7 @@ class PostDetials extends Component {
                       <div className="description-area-left">
                         <h3 class="nav-tap-area__title">Course Description</h3>
                         <div class="nav-tap-area__description">
-                          <p>
-                            Vivamus volutpat eros pulvinar velit laoreet, sit
-                            amet egestas erat dignissim. Sed quis rutrum tellus,
-                            sit amet viverra felis. Cras sagittis sem sit amet
-                            urna feugiat rutrum. Nam nulla ipsum, venenatis
-                            malesuada felis quis, ultricies convallis neque.
-                            Pellentesque tristique fringilla tempus. Vivamus
-                            bibendum nibh in dolor pharetra, a euismod nulla
-                            dignissim. Aenean viverra tincidunt nibh, in
-                            imperdiet nunc. Suspendisse eu ante pretium,
-                            consectetur leo at, congue quam. Nullam hendrerit
-                            porta ante vitae tristique. Vestibulum ante ipsum
-                            primis in faucibus orci luctus et ultrices posuere
-                            cubilia Curae; Vestibulum ligula libero, feugiat
-                            faucibus mattis eget, pulvinar et ligula.
-                          </p>
+                          <p>{ReactHtmlParser(item.description)}</p>
                         </div>
                       </div>
                     </div>

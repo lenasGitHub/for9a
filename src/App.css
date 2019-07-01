@@ -636,6 +636,16 @@ body {
 span.lnr.lnr-heart {
   color: #fff; }
 
+.infinite-scroll-component {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  justify-content: space-between; }
+
+.scroll-single-item {
+  flex: 0 1 calc(20% - 8px);
+  margin-bottom: 20px; }
+
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
@@ -878,6 +888,42 @@ span.lnr.lnr-heart {
     .favorite-icon__tooltip .tool-tip__text {
       display: block;
       padding: 1.3rem 1.7rem; }
+
+.loader-area {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  clear: both;
+  display: table; }
+
+.lds-ripple {
+  position: relative;
+  width: 6.4rem;
+  height: 6.4rem; }
+
+.lds-ripple div {
+  position: absolute;
+  border: 0.4rem solid #eb751d;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s; }
+
+@keyframes lds-ripple {
+  0% {
+    top: 2.8rem;
+    left: 2.8rem;
+    width: 0;
+    height: 0;
+    opacity: 1; }
+  100% {
+    top: -.1rem;
+    left: -.1rem;
+    width: 5.8rem;
+    height: 5.8rem;
+    opacity: 0; } }
 
 .site-header {
   position: fixed;
@@ -1214,7 +1260,8 @@ span.lnr.lnr-heart {
   background: url("https://colorlib.com/preview/theme/education/img/top-banner.jpg") no-repeat;
   background-size: cover;
   height: 67vh;
-  background-position: center center; }
+  background-position: center center;
+  top: -10px; }
 
 .wrap_float {
   float: right;

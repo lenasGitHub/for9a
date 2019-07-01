@@ -15,6 +15,7 @@
 @import './components/nice-select.scss';
 @import './components/share/share-icon.scss';
 @import './components/share/favorite-icon.scss';
+@import './components/share/loader.scss';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
@@ -250,6 +251,7 @@ ul li.ui-tabs-active {
             // &:hover .heading {
             //     top: -30px;
             // }
+
             &__top {
                 display: flex;
                 height: 70px;

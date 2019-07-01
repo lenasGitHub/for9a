@@ -173,3 +173,16 @@
 span.lnr.lnr-heart {
     color: #fff;
 }
+
+.infinite-scroll-component {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    justify-content: space-between;
+}
+
+.scroll-single-item {
+    // margin: 10px;
+    flex: 0 1 calc(20% - 8px);
+    margin-bottom: 20px;
+}
