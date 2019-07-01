@@ -96,7 +96,7 @@ class PostDetials extends Component {
     if (item.id) {
       return (
         <section>
-          <section class="banner-area detials-banner relative opportunity-banner ">
+          <section class="banner-area detials-banner relative opportunity-banner cairo-arabic-font ">
             <div class="overlay overlay-bg" />
             <div class="container">
               <div class="row d-flex align-items-center justify-content-center">
@@ -123,7 +123,7 @@ class PostDetials extends Component {
                               {item.title}
                             </div>
 
-                            <ul class="short_description">
+                            <ul class="short_description cairo-arabic-font">
                               <li class="time">7 days</li>
                               <li class="date ">
                                 {" "}
@@ -204,144 +204,173 @@ class PostDetials extends Component {
                     </div>
                   </div>
 
-                  <ul
-                    class="nd_learning_list_style_none nd_learning_margin_0 nd_learning_padding_0 nd_learning_section nd_learning_border_bottom_2_solid_grey ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"
-                    role="tablist"
-                  >
-                    <li
-                      class="nd_learning_display_inline_block ui-state-default ui-corner-top ui-tabs-active ui-state-active"
-                      role="tab"
-                      tabindex="0"
-                      aria-controls="nd_learning_single_course_description"
-                      aria-labelledby="ui-id-11"
-                      aria-selected="true"
-                      aria-expanded="true"
-                    >
+                  <ul class="nd_learning_section" role="tablist">
+                    <li class="nd_learning_display_inline_block  ui-tabs-active">
                       <h4>
-                        <a
-                          class="nd_learning_outline_0 nd_learning_padding_20_15 nd_learning_display_inline_block nd_options_first_font nd_options_color_greydark ui-tabs-anchor"
-                          href="#nd_learning_single_course_description"
-                          role="presentation"
-                          tabindex="-1"
-                          id="ui-id-11"
-                        >
-                          Descriptions
-                        </a>
-                      </h4>
-                    </li>
-                    <li
-                      class="nd_learning_display_inline_block ui-state-default ui-corner-top"
-                      role="tab"
-                      tabindex="-1"
-                      aria-controls="nd_learning_single_course_teachers"
-                      aria-labelledby="ui-id-12"
-                      aria-selected="false"
-                      aria-expanded="false"
-                    >
-                      <h4>
-                        <a
-                          class="nd_learning_outline_0 nd_learning_padding_20_15 nd_learning_display_inline_block nd_options_first_font nd_options_color_greydark ui-tabs-anchor"
-                          href="#nd_learning_single_course_teachers"
-                          role="presentation"
-                          tabindex="-1"
-                          id="ui-id-12"
-                        >
-                          Teachers
+                        <a class="nd_learning_display_inline_block " href="#!">
+                          وصف
                         </a>
                       </h4>
                     </li>
 
-                    <li
-                      class="nd_learning_display_inline_block ui-state-default ui-corner-top"
-                      role="tab"
-                      tabindex="-1"
-                      aria-controls="nd_learning_single_course_attendees"
-                      aria-labelledby="ui-id-13"
-                      aria-selected="false"
-                      aria-expanded="false"
-                    >
+                    <li class="nd_learning_display_inline_block  ">
                       <h4>
-                        <a
-                          class="nd_learning_outline_0 nd_learning_padding_20_15 nd_learning_display_inline_block nd_options_first_font nd_options_color_greydark ui-tabs-anchor"
-                          href="#nd_learning_single_course_attendees"
-                          role="presentation"
-                          tabindex="-1"
-                          id="ui-id-13"
-                        >
-                          Attendees
+                        <a class="nd_learning_display_inline_block " href="#!">
+                          شروط المتقدم
                         </a>
                       </h4>
                     </li>
 
-                    <li
-                      class="nd_learning_display_inline_block ui-state-default ui-corner-top"
-                      role="tab"
-                      tabindex="-1"
-                      aria-controls="nd_learning_single_course_comments"
-                      aria-labelledby="ui-id-14"
-                      aria-selected="false"
-                      aria-expanded="false"
-                    >
+                    <li class="nd_learning_display_inline_block  ">
                       <h4>
-                        <a
-                          class="nd_learning_outline_0 nd_learning_padding_20_15 nd_learning_display_inline_block nd_options_first_font nd_options_color_greydark ui-tabs-anchor"
-                          href="#nd_learning_single_course_comments"
-                          role="presentation"
-                          tabindex="-1"
-                          id="ui-id-14"
-                        >
-                          Comments
+                        <a class="nd_learning_display_inline_block " href="#!">
+                          معلومات الفرصة
                         </a>
                       </h4>
                     </li>
 
-                    <li
-                      class="nd_learning_display_inline_block ui-state-default ui-corner-top"
-                      role="tab"
-                      tabindex="-1"
-                      aria-controls="nd_learning_single_course_documents"
-                      aria-labelledby="ui-id-15"
-                      aria-selected="false"
-                      aria-expanded="false"
-                    >
+                    <li class="nd_learning_display_inline_block  ">
                       <h4>
-                        <a
-                          class="nd_learning_outline_0 nd_learning_padding_20_15 nd_learning_display_inline_block nd_options_first_font nd_options_color_greydark ui-tabs-anchor"
-                          href="#nd_learning_single_course_documents"
-                          role="presentation"
-                          tabindex="-1"
-                          id="ui-id-15"
-                        >
-                          Program
-                        </a>
-                      </h4>
-                    </li>
-
-                    <li
-                      class="nd_learning_display_inline_block ui-state-default ui-corner-top"
-                      role="tab"
-                      tabindex="-1"
-                      aria-controls="nd_learning_single_course_reviews"
-                      aria-labelledby="ui-id-16"
-                      aria-selected="false"
-                      aria-expanded="false"
-                    >
-                      <h4>
-                        <a
-                          class="nd_learning_outline_0 nd_learning_padding_20_15 nd_learning_display_inline_block nd_options_first_font nd_options_color_greydark ui-tabs-anchor"
-                          href="#nd_learning_single_course_reviews"
-                          role="presentation"
-                          tabindex="-1"
-                          id="ui-id-16"
-                        >
-                          Reviews
+                        <a class="nd_learning_display_inline_block " href="#!">
+                          الشروط التعليمية
                         </a>
                       </h4>
                     </li>
                   </ul>
+
+                  <div class="nav-tap-area">
+                    <div class="nav-tap-area__container">
+                      <div class="featured-badges">
+                        <div class="badge">
+                          <img src={item.organization.image} />
+                        </div>
+                      </div>
+                      <div className="description-area-left">
+                        <h3 class="nav-tap-area__title">Course Description</h3>
+                        <div class="nav-tap-area__description">
+                          <p>
+                            Vivamus volutpat eros pulvinar velit laoreet, sit
+                            amet egestas erat dignissim. Sed quis rutrum tellus,
+                            sit amet viverra felis. Cras sagittis sem sit amet
+                            urna feugiat rutrum. Nam nulla ipsum, venenatis
+                            malesuada felis quis, ultricies convallis neque.
+                            Pellentesque tristique fringilla tempus. Vivamus
+                            bibendum nibh in dolor pharetra, a euismod nulla
+                            dignissim. Aenean viverra tincidunt nibh, in
+                            imperdiet nunc. Suspendisse eu ante pretium,
+                            consectetur leo at, congue quam. Nullam hendrerit
+                            porta ante vitae tristique. Vestibulum ante ipsum
+                            primis in faucibus orci luctus et ultrices posuere
+                            cubilia Curae; Vestibulum ligula libero, feugiat
+                            faucibus mattis eget, pulvinar et ligula.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 detials-area__right">
+                  <div class="widget widget_recent_entries ul-li-block clearfix">
+                    <div className="widget__top">
+                      <div class="icon-holder">
+                        <img
+                          src="https://www.for9a.com/images/oprt_cat/Vocational-and-Technical-Trainings.svg"
+                          alt=""
+                          class="icon"
+                        />
+                      </div>
+                      <h2 class="widget_title heading">اخترنا لكم</h2>
+                    </div>
+                    <div className="widget__contain">
+                      <ul className="widget_list">
+                        <li>
+                          <a href="#!">الدراسة بالخارج</a>
+                        </li>
+                        <li>
+                          <a href="#!">تنمية المهارات</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="widget widget_recent_entries ul-li-block clearfix">
+                    <div className="widget__top">
+                      <div class="icon-holder">
+                        <img
+                          src="https://www.for9a.com/images/oprt_cat/Events-Festivals-and-Conferences.svg"
+                          alt=""
+                          class="icon"
+                        />
+                      </div>
+                      <h2 class="widget_title heading">فرص مميزة</h2>
+                    </div>
+                    <div className="widget__contain">
+                      توفر لكم منصة تعلم العديد من المقالات التي قام بجمعها فريق
+                      بحث موقع فرصة من عدة مصادر موثوقة بهدف تنمية مهاراتكم
+                      الشخصية والحياتية التي يتوقف عليها نجاحكم في الكثير
+                      المجالات سواء على الصعيد الأكاديمي أو المهني أو الشخصي،
+                      وتحقيق الاستفادة من الفرص التي يتيحها لكم الموقع، والتأكد
+                      من أن عملية التقديم قد تمت بالشكل الصحيح
+                    </div>
+                  </div>
+
+                  <div class="widget widget_recent_entries ul-li-block clearfix">
+                    <div className="widget__top">
+                      <div class="icon-holder">
+                        <img
+                          src="https://www.for9a.com/images/oprt_cat/Internships.svg"
+                          alt=""
+                          class="icon"
+                        />
+                      </div>
+                      <h2 class="widget_title heading">فرص السفر للخارج </h2>
+                    </div>
+                    <div className="widget__contain">
+                      توفر لكم منصة تعلم العديد من المقالات التي قام بجمعها فريق
+                      بحث موقع فرصة من عدة مصادر موثوقة بهدف تنمية مهاراتكم
+                      الشخصية والحياتية التي يتوقف عليها نجاحكم في الكثير
+                      المجالات سواء على الصعيد الأكاديمي أو المهني أو الشخصي،
+                      وتحقيق الاستفادة من الفرص التي يتيحها لكم الموقع، والتأكد
+                      من أن عملية التقديم قد تمت بالشكل الصحيح
+                    </div>
+                  </div>
+
+                  <div class="widget widget_recent_entries ul-li-block clearfix">
+                    <div className="widget__top">
+                      <div class="icon-holder">
+                        <img
+                          src="https://image.flaticon.com/icons/png/512/1874/1874882.png"
+                          alt=""
+                          class="icon"
+                        />
+                      </div>
+                      <h2 class="widget_title heading">كلمات دلالية </h2>
+                    </div>
+                    <div className="widget__contain">
+                      <ul className="widget_tags">
+                        <li>
+                          <a href="#">code</a>
+                        </li>
+                        <li>
+                          <a href="#">design</a>
+                        </li>
+                        <li>
+                          <a href="#">typography</a>
+                        </li>
+                        <li>
+                          <a href="#">development</a>
+                        </li>
+                        <li>
+                          <a href="#">creative</a>
+                        </li>
+                        <li>
+                          <a href="#">codehack</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
                   <CarouselSlider slideItems={data} />
                 </div>
               </div>

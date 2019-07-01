@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, withRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 
 import Header from "./components/shared/layout/header";
@@ -24,6 +24,7 @@ class App extends Component {
             <Header />
             <Route exact path="/" component={OpportunityList} />
             <Route exact path="/opportunity/:id" component={PostDetials} />
+
             <Footer />
           </div>
         </BrowserRouter>
